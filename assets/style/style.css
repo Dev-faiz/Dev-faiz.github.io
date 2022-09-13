@@ -17,9 +17,9 @@
 
     /* HSL colors */
 
-    --first-color :  hsl(var(--hue-colors), 69%, 61%);
-    --first-color-second:  hsl(var(--hue-colors), 69%, 61%) ;
-    --first-color-alt :  hsl(var(--hue-colors), 69%, 61%);
+    --first-color :  hsl(var(--hue-colors), 89%, 60%);
+    --first-color-second:  hsl(var(--hue-colors), 56%, 12%) ;
+    --first-color-alt :  hsl(var(--hue-colors), 69%, 65%);
     --first-color-lighter : hsl(var(--hue-colors), 57%, 53%) ;
     --title-color : hsl(var(--hue-colors), 8%, 15%) ;
     --text-color : hsl(var(--hue-colors), 8%, 45%) ;
@@ -204,8 +204,8 @@ img{
     flex-direction: column;
     align-items: center;
     font-size: var(--small-font-size); 
-     color: var(--title-color); 
-     font-weight: var(--font-medium);
+    color: var(--title-color); 
+    font-weight: var(--font-medium);
 } 
 
 
@@ -218,10 +218,12 @@ img{
 .nav_close{
     position: absolute;
     right: 1.3rem;
-    bottom: 5rem;
+    bottom: 1rem;
     cursor: pointer;
-    color:var(--first-color-alt)
+    color:var(--first-color-alt);
+    font-size: 1.5rem;
 }
+
 
 
 /* showmenu */
@@ -278,8 +280,8 @@ img{
     margin-bottom: var(--mb-2);
 }
 .home_scroll{
-    /* display: none; */
-}
+    display: none;
+} *
 .home_scroll-button{
     color: var(--first-color);
     transition: .3s;
@@ -301,10 +303,55 @@ img{
     font-size: 1.5rem;
 }
 /* button */
-
+.button{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+}
+.button:hover{
+    background-color: var(--first-color-alt);
+}
+.button-flex{
+    display: inline-flex;
+    align-items: center;
+}
 
 /* about */
+.about_img{
+    width: 200px;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+}
 
+.about_description{
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+}
+.about_info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2-5);
+}
+.about_info_title{
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
+.about_info-name{
+    font-size: var(--small-font-size);
+}
+.about_info-name,.about_info_title{
+    display: block;
+    text-align: center;
+}
+.about_buttons{
+    display: flex;
+    justify-content: center;
+}
 /* skills */
 
 
