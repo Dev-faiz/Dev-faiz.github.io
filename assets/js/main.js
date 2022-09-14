@@ -51,19 +51,55 @@ skillsHeader.forEach((e)=>{
 
 // qualification tabs
 
-// const tabs = document.querySelectorAll('[data-target]'),
-//         tabContents = document.querySelectorAll('[data-content]')
+const tabs = document.querySelectorAll('[data-target]'),
+        tabContents = document.querySelectorAll('[data-content]')
 
-//     tabs.forEach(tab=>{
-//         const target = document.querySelector(tab.dataset.target)
-//         tabContents.forEach(tabContent =>{
-//             tabContent.classList.remove('qualification_active')
-//         })
-//         target.classList.add('qualification_active')
-//         tab.forEach(tab=>{
-//             tab.classList.remove('qualification_active')
-//         })
-//         tab.classList.add('qualification_active')
-//     })
+    tabs.forEach(tab=>{
+        const target = document.querySelector(tab.dataset.target)
+        tabContents.forEach(tabContent =>{
+            tabContent.classList.remove('qualification_active')
+        })
+        target.classList.add('qualification_active')
+        tab.forEach(tab=>{
+            tab.classList.remove('qualification_active')
+        })
+        tab.classList.add('qualification_active')
+    })
 
 // services
+const modalViews = document.querySelectorAll('.services_modal'),
+      modalBtns = document.querySelectorAll('.services_button'),
+      modalCloses = document.querySelectorAll('.services_modal-close')
+    
+      let modal = function (modalClick){
+        modalViews[modalClick].classList.add('active-modal')
+      }
+      modalBtns.forEach((modalBtn , i)=>{
+        modalBtn.addEventListener('click',()=>{
+            // console.log('g')
+            modal(i)
+        })});
+
+      modalCloses.forEach((modalClose)=>{
+         modalClose.addEventListener('click',()=>{
+            modalViews.forEach((modalView)=>{
+                modalView.classList.remove('active-modal')
+            })
+         })
+      })
+// ================================= portfolio swiper ================================
+
+let swiper = new Swiper('.portfolio_container', {
+    cssMode: true,
+    loop : true ,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable : true,
+    },
+    // mousewheel: true,
+    // keyboard: true,
+  });
