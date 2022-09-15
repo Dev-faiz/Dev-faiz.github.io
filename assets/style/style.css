@@ -95,7 +95,7 @@ body.dark-theme{
     display: flex;
     align-items: center;
 }
-.change_theme{
+.change-theme{
     font-size: 1.25rem;
     color: var(--title-color);
     margin-right: var(--mb-1);
