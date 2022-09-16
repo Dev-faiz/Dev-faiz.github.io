@@ -12,12 +12,12 @@
 
     /* Change your fav color */
 
-    --hue-colors : 0 ; /* 142 green :  purple - 250 : 
+    --hue-colors : 255 ; /* 142 green :  purple - 250 : 
 
 
     /* HSL colors */
 
-    --first-color :  hsl(var(--hue-colors), 100%, 61%);
+    --first-color :  hsl(var(--hue-colors), 60%, 61%);
     --first-color-second:  hsl(var(--hue-colors), 69%, 61%) ;
     --first-color-alt :  hsl(var(--hue-colors), 57%, 53%);
     --first-color-lighter : hsl(var(--hue-colors), 92%, 85%) ;
@@ -25,8 +25,8 @@
     --text-color : hsl(var(--hue-colors), 8%, 45%) ;
     --text-color-light : hsl(var(--hue-colors), 8%, 65%)  ;
     --input-color :hsl(var(--hue-colors), 70%, 96%)  ;
-    --body-color : hsl(var(--hue-colors), 60%, 99%) ;
-    --container-color : #fff ;
+    --body-color : hsl(var(--hue-colors), 9%, 79%) ;
+    --container-color : rgb(255, 255, 255) ;
 
 
     /* Font & typography */
@@ -636,6 +636,11 @@ services_title {
  
 }
 
+.button_div{
+    display: flex;
+    gap: 10px;
+}
+
 .portfolio_content{
     padding: 0 1.5rem;
     display: grid;
@@ -646,12 +651,13 @@ services_title {
     display: grid;
 }
 .portfolio_img{
-    width: 265px;
+    width: 405px;
     border-radius: .5rem;
     justify-self: center;
 }
 .portfolio_button{
     text-align: center;
+    width: 50%;
 }
 .portfolio_title{
     font-size: var(--h3-font-size);
@@ -852,4 +858,264 @@ services_title {
 
 .show-scroll{
     bottom: 5rem;
+}
+
+@media screen and (max-width: 350px) {
+    .container{
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
+    .nav_menu{
+        padding: 2rem .25rem 4rem;
+
+    }
+    .nav_list{
+        column-gap: 0;
+    }
+    .home_content{
+        grid-template-columns: .25fr 3fr;
+    }
+    .home_blob{
+        width: 180px;
+    }
+    .skill_title{
+        font-size: var(--normal-font-size);
+    }
+    .qualification_data{
+        gap : .5rem ;
+    }
+    .services_container{
+        grid-template-columns: max-content;
+        justify-content: center;
+    }
+    .services_content{
+        padding-right: 3.5fr;
+    }
+   .project_img{
+        width: 200px;
+        
+   }
+}
+
+@media screen and (min-width: 568px){
+    .home_content{
+        grid-template-columns: max-content 1fr 1fr;
+    }
+    .home_data{
+        grid-column: initial;
+    }
+
+    .home_img{
+        order: 1;
+        justify-self: center;
+    }
+
+    .about_container,
+    .skil_container,
+    .portfolio_content,
+    .contact_container,
+    .footer_container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .about_container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+
+    .qualification_sections{
+        display: grid;
+        grid-template-columns: .6fr;
+        justify-content: center;
+    }
+
+    .qualification_title{
+        margin-top: 10px;
+    }
+
+    .skill_subtitle{
+        font-size: 15px;
+    }
+    .section_title{
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* dev-faiz.github.io; */
+    body{
+        margin: 0;
+    }
+    .section{
+        padding: 6rem 0 2rem;
+    }
+    .section_subtitle{
+        margin-bottom: 4rem ;
+    }
+    .header{
+        top : 0;
+        bottom: initial;
+    }
+    .header,
+    .main,
+    .footer_container{
+        padding: 0 1rem;
+    }
+    .section{
+        padding: 6rem 0 2rem;
+    }
+    .section_subtitle{
+        margin-bottom: 4rem;
+    }
+    .header{
+        top: 0;
+        bottom: initial;
+    }
+    .header,
+    .main,
+    .footer_container{
+        padding: 0 1rem;
+    }
+    .nav{
+        /* height: calc(var(--header-height)+1.5rem); */
+        height: 50px;
+        font-size: 30px;
+        column-gap: 1rem;
+    }
+    .nav_icon,
+    .nav_close,
+    .nav_toggle{
+        display: none;
+    }
+   
+    .nav_list{
+        display: flex;
+        column-gap: 2rem;
+    }
+
+    .nav_menu{
+        margin-left: auto;
+    }
+
+    .change-theme{
+        margin-top: 0;
+    }
+
+    .home_container{
+        row-gap: 5rem;
+    }
+    .home_content{
+        padding-top: 5.5rem;
+        column-gap: 2rem;
+    }
+
+    .home_blob{
+        width: 270px;
+    }
+
+    .home_scroll{
+        display: block;
+    }
+    .home_scroll-button{
+        margin-left: 3rem;
+    }
+    .about_container{
+        column-gap: 5rem;
+    }
+    .about_description{
+        text-align: initial;
+    }
+    .about_info{
+    justify-content: space-between;
+    }
+    .qualification_tabs{
+        justify-content: center;
+    }
+    .qualification_button{
+        margin: 0 var(--mb-1);
+    }
+    .qualification_sections{
+        grid-template-columns: .5fr;
+    }
+
+    .services_container{
+        grid-template-columns: repeat(3,218px);
+        justify-content: center;
+    }
+    .portfolio_img{
+        width: 550px;
+    }
+    .portfolio_content{
+        align-items: center;
+    }
+
+    .footer_container{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .footer_bg{
+        padding: 3rem 0 3.5rem;
+    }
+
+    .footer_links{
+        display: flex;
+        flex-direction: row;
+        column-gap: 2rem;
+    }
+
+    .footer_socials{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .footer_copy{
+        margin-top: 4.5rem;
+    }
+
+}
+
+@media screen and (min-width: 1024) {
+    .header,
+    .main,
+    .footer_container{
+        padding: 0;
+    }
+    
+    .home_blob{
+        width: 320px;
+    }
+
+    .home_social{
+        transform: translateX(-6rem);
+    }
+
+    .services_container{
+        grid-template-columns: repeat(3 ,238px);
+    }
+    .portfolio_content{
+        column-gap: 5rem;
+    }
+    .swiper_portfolio_icon {
+        font-size: 4rem;
+        color: var(--first-color);
+    }
+
+    .swiper-button-prev{
+        left: -3.5rem;
+    }
+    .swiper-button-prev{
+        right: -3.5rem;
+    }
+
+  .contact_form{
+    width: 460px;
+  }
+
+  .contact_input{
+    grid-template-columns: repeat(2,1fr);
+  }
+ 
 }
