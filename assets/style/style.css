@@ -12,7 +12,7 @@
 
     /* Change your fav color */
 
-    --hue-colors : 255 ; /* 142 green :  purple - 250 : 
+    --hue-colors : 250 ; /* 142 green :  purple - 250 : 
 
 
     /* HSL colors */
@@ -364,6 +364,7 @@ img{
     justify-content: center;
     align-items: center;
     display: flex;
+    
 }
 .about_description{
     text-align: center;
@@ -920,16 +921,17 @@ services_title {
         justify-self: center;
     }
 
-    .about_container,
+    /* .about_container,
     .skil_container,
     .portfolio_content,
     .contact_container,
     .footer_container{
         /* grid-template-columns: repeat(2,1fr); */
-    }
+    /* } */ 
 
     .about_container{
         grid-template-columns: repeat(2,1fr);
+       
     }
 
 
@@ -1035,6 +1037,7 @@ services_title {
     }
     .about_container{
         column-gap: 5rem;
+         
     }
     .about_description{
         text-align: initial;
@@ -1128,4 +1131,10 @@ services_title {
     grid-template-columns: repeat(2,1fr);
   }
  
+}
+
+@media screen and (max-width:780px) and (min-width:320px){
+    .about_container{
+        flex-direction: column;
+    }
 }
