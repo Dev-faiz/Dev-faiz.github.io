@@ -933,10 +933,7 @@ services_title {
         grid-template-columns: repeat(2,1fr);
        
     }
-    .js-calendar-graph-svg{
-        width: 100%;
-    }
-
+  
     .qualification_sections{
         display: grid;
         grid-template-columns: .6fr;
@@ -1139,4 +1136,32 @@ services_title {
     .about_container{
         flex-direction: column;
     }
+    .js-calendar-graph{
+        overflow: scroll;
+    }
+    /* width */
+ ::-webkit-scrollbar {
+    width: 1px;
+    height: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:var(--first-color);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--first-color-alt);
+  }
+
+  .contrib-number {
+    
+    font-size: 18px;
+  }
 }
