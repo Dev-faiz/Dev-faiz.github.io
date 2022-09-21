@@ -1165,3 +1165,23 @@ services_title {
     font-size: 18px;
   }
 }
+::-webkit-scrollbar {
+    width: 10px;
+    height: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #fbc7fb;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:var(--first-color);
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--first-color-alt);
+  }
