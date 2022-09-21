@@ -933,7 +933,9 @@ services_title {
         grid-template-columns: repeat(2,1fr);
        
     }
-
+    .js-calendar-graph-svg{
+        width: 100%;
+    }
 
     .qualification_sections{
         display: grid;
