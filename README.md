@@ -4,7 +4,9 @@ Hello, I’m Faiz, and I’m passionate about building things for the web. Latel
 
 ## Description
 
-- This Portfolio to show case my skill and all of the tech st
+- This Portfolio to show case my skill and all of the tech stack 
+- It includes my contact information as well as set of my projects 
+
 
 ### Tech Stack
 
@@ -17,10 +19,10 @@ Hello, I’m Faiz, and I’m passionate about building things for the web. Latel
 
 ### Features 
 
-- You can search and watch your city weather .
-- live location weather
-- You can watch forecast of seven days 
-
+- My contact
+- My education
+- My Projects
+- My Skill Set
 
 
 
@@ -28,15 +30,15 @@ Hello, I’m Faiz, and I’m passionate about building things for the web. Latel
 ### Lessons Learned
 
 - Gain excessive knowledge on application of HTML , CSS & JS .
-- Explored how to call API and show it on my HTML page
-- Learned how to get location in real time pager
+- Explored how to apply css libraries
+- Use js libraries for sliding technique 
 - Enjoyed the process of learning and creating the product.
 
 
-### Screenshots
+### You can visit my portfolio [Click here ](https://dev-faiz.github.io)
 
-<img align="left" alt="Coding" width="150" src="https://github.com/Dev-faiz/WeatherApP/blob/main/pic/MobVersion.jpeg">
-<img align="left" alt="Coding" width="650" src="https://github.com/Dev-faiz/WeatherApP/blob/main/pic/Weather.png">
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/101700934/192770053-03c1df95-bed0-4db7-b333-28a55bc53ef3.gif)
 
 
 
