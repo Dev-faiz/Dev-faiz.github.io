@@ -110,7 +110,11 @@ body.dark-theme{
     padding : 0 ;
     margin : 0 ;
 }
-
+.uil-message:before {
+    content: '\eb23';
+    /* margin-left: 23px; */
+    margin-right: 10px;
+}
 html{
     scroll-behavior: smooth;
 }
