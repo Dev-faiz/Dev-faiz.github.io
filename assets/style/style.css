@@ -715,7 +715,22 @@ services_title {
 .swiper-pagination-bullets{
     outline: none;
 } 
-
+#button_tech{
+    font-size : 15px;
+    margin : 10px;
+    margin: 0;
+    
+}
+#button_tech>div{
+    
+    background-color: gray;
+    
+}
+#tech_stack{
+    margin-top: 12px;
+    padding: 0px;
+    text-align: center;
+}
 /* contact */
 
 .contact_container{
