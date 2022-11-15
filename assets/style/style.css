@@ -274,6 +274,21 @@ img{
     align-items: center;
 }
 
+.profilepic_container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profilepic{
+
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid  var(--first-color) ;
+   
+}
+
 .home_social{
     display: grid;
     grid-template-columns: max-content;
@@ -654,6 +669,10 @@ services_title {
     overflow: initial;
  
 }
+.port_dis{
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
 
 .button_div{
     display: flex;
@@ -894,7 +913,16 @@ services_title {
     bottom: 5rem;
 }
 
+
+
 @media screen and (max-width: 350px) {
+
+    .profilepic_container{
+
+        width: 300%;
+
+    }
+
     .container{
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
@@ -930,9 +958,16 @@ services_title {
         width: 200px;
         
    }
+   
+ 
 }
 
+
+
 @media screen and (min-width: 568px){
+
+ 
+ 
     .home_content{
         grid-template-columns: max-content 1fr 1fr;
     }
@@ -945,6 +980,7 @@ services_title {
         justify-self: center;
     }
 
+    
     /* .about_container,
     .skil_container,
     .portfolio_content,
@@ -1114,6 +1150,9 @@ services_title {
 }
 
 @media screen and (min-width: 1024) {
+
+  
+
     .header,
     .main,
     .footer_container{
@@ -1156,7 +1195,13 @@ services_title {
  
 }
 
-@media screen and (max-width:780px) and (min-width:320px){
+@media screen and (max-width:567px) and (min-width:320px){
+
+
+    .profilepic_container{
+       width: 350% ;
+    }
+
     .about_container{
         flex-direction: column;
     }
