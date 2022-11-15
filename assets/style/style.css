@@ -12,12 +12,12 @@
 
     /* Chane your fav color */
 
-    --hue-colors : 250 ; /* 142 green :  purple - 250 : 
+    --hue-colors : 00 ; /* 142 green :  purple - 250 : 
 
 
     /* HSL colors */
 
-    --first-color :  hsl(var(--hue-colors), 60%, 61%);
+    --first-color :  hsl(var(--hue-colors), 60%, 31%);
     --first-color-second:  hsl(var(--hue-colors), 69%, 61%) ;
     --first-color-alt :  hsl(var(--hue-colors), 57%, 53%);
     --first-color-lighter : hsl(var(--hue-colors), 92%, 85%) ;
