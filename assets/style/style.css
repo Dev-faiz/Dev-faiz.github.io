@@ -12,12 +12,12 @@
 
     /* Chane your fav color */
 
-    --hue-colors : 00 ; /* 142 green :  purple - 250 : 
+    --hue-colors : 170 ; /* 142 green :  purple - 250 : 
 
 
     /* HSL colors */
 
-    --first-color :  hsl(var(--hue-colors), 60%, 31%);
+    --first-color :  hsl(var(--hue-colors), 45%, 31%);
     --first-color-second:  hsl(var(--hue-colors), 69%, 61%) ;
     --first-color-alt :  hsl(var(--hue-colors), 57%, 53%);
     --first-color-lighter : hsl(var(--hue-colors), 92%, 85%) ;
@@ -25,8 +25,8 @@
     --text-color : hsl(var(--hue-colors), 8%, 45%) ;
     --text-color-light : hsl(var(--hue-colors), 8%, 65%)  ;
     --input-color :hsl(var(--hue-colors), 70%, 96%)  ;
-    --body-color : hsl(var(--hue-colors), 9%, 79%) ;
-    --container-color : rgb(255, 255, 255) ;
+    --body-color : hsl(var(--hue-colors), 45%, 79%) ;
+    --container-color : rgb(239, 239, 239) ;
 
 
     /* Font & typography */
@@ -662,6 +662,10 @@ services_title {
 }
 
 /* Portfolio */
+
+#swiper_icon{
+    font-size: 150px;
+}
 .portfolio{
     padding: 0 50px;
 }
